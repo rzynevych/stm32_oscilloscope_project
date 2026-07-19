@@ -1,0 +1,6 @@
+[submodule "stm32scope"]
+	path = stm32scope
+	url = https://github.com/rzynevych/stm32scope
+[submodule "stm32scopeUI"]
+	path = stm32scopeUI
+	url = https://github.com/rzynevych/stm32scopeUI
