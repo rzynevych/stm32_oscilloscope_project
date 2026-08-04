@@ -25,7 +25,7 @@ A USB oscilloscope built around an STM32F411 microcontroller with a Qt desktop a
 
 ## How it works
 
-- Signal data is acquired by internal ADC and collected in DMA buffer. ADC conversion is triggered by timer. Samples are copied from DMA buffer to the ring buffer in which trigger search is performed. Once trigger is found samples are being sent to PC via USB CDC using binary protocol. On PC side visualization is performed and the interface for setting trigger, sample rate and other params is provided.
+- An internal ADC acquires signal data and stores it in a DMA buffer, triggered by a timer. Samples are copied to a ring buffer to search for a trigger. Once trigger detected, the samples are sent to the PC via USB CDC using a binary protocol. The PC interface handles data visualization and allows configuring the trigger, sample rate, and other parameters.
 - Firmware runs on FreeRTOS and separates acquisition, trigger processing and command handling into dedicated tasks.
 
 ## Hardware
