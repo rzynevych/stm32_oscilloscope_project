@@ -2,6 +2,13 @@
 
 A USB oscilloscope built around an STM32F411 microcontroller with a Qt desktop application for real-time waveform visualization and measurements. The project demonstrates high-speed ADC acquisition using DMA, trigger-based capture, and efficient USB streaming.
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=4bzPi8Hc5ZI">
+    <img src="https://img.youtube.com/vi/4bzPi8Hc5ZI/hqdefault.jpg" alt="Watch the video" width="600" />
+  </a>
+</div>
+</br>
+
 ![screenshot](images/demo.png)
 
 ## Features
