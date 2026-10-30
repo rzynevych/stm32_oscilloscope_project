@@ -6,6 +6,7 @@ A USB oscilloscope built around an STM32F411 microcontroller with a Qt desktop a
   <a href="https://www.youtube.com/watch?v=4bzPi8Hc5ZI">
     <img src="https://img.youtube.com/vi/4bzPi8Hc5ZI/hqdefault.jpg" alt="Watch the video" width="600" />
   </a>
+  <p><sub>This is a video demonstration of my project. Click the image to watch on YouTube.</sub></p>
 </div>
 </br>
 
