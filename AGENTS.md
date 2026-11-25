@@ -35,6 +35,12 @@ Host/device protocol definitions are duplicated in `stm32scope/App/oscilloscope_
 
 ## Git workflow
 
-- `stm32scope` and `stm32scopeUI` are independent Git repositories/submodules. Commit component changes inside the relevant submodule, then update the parent repository's submodule pointer.
-- Check `git status` in the root and in each changed submodule. Avoid accidentally committing generated build output or changing a submodule pointer without the corresponding component commit.
+- `stm32scope` and `stm32scopeUI` are independent Git repositories/submodules. Component changes belong in the relevant submodule repository.
+- Check `git status` in the root and in each affected submodule. Avoid accidentally committing generated build output or unrelated changes.
 - Coordinate protocol changes across both repositories so the checked-out revisions remain compatible.
+- Do not commit changes unless explicitly requested by the user.
+- When the user requests commits, commit changes in all affected component repositories first.
+- Update and commit the parent repository's submodule pointers only when the user explicitly requests committing changes to the root repository as well.
+- Never include unrelated changes in commits.
+- Before committing, inspect the status and diff of every affected repository.
+- Before updating a submodule pointer, verify that it points to the intended component commit.
